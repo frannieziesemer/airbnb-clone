@@ -3,3 +3,15 @@ body {
     margin: 0;
 }
 
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 15fr 2fr;
+    grid-template-areas:
+        "info info info"
+        "logo nav-search profile"
+        "main main main"
+        ". . .";
+}
+

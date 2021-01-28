@@ -1,3 +1,41 @@
 body {
     background: lightblue;
+    margin: 0;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 15fr 2fr;
+    grid-template-areas:
+        "info info info"
+        "logo nav-search profile"
+        "main main main"
+        ". . .";
+}
+
+.info-text {
+    grid-area: info;
+}
+
+.logo-container {
+    grid-area: logo;
+}
+
+.nav-search-container {
+    grid-area: nav-search;
+}
+
+.profile-buttons-container {
+    grid-area: profile;
+}
+
+.main {
+    grid-area: main;
+}
+
+.border {
+    border: 1px solid black;
+}
+
